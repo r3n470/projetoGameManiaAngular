@@ -1,0 +1,247 @@
+/*Main*/
+.bannerPromo {
+    width: 100%;
+}
+
+.bannerDestaque {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 2%;
+    justify-items: center;
+}
+
+.bannerDestaqueTamanho {
+    max-width: 90%;
+    border-radius: 1%;
+    margin-left: 5%;
+  }
+
+@media screen and (min-width: 481px) {
+.bannerDestaqueTamanho:hover {
+    transform: scale(1.1);}
+}
+
+.destaquePlataforma {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 25px;
+    justify-items: center;
+}
+
+
+.escolhaPlataforma {
+    display: inline-grid;
+    align-items: center;
+    justify-items: center;
+    align-content: space-between;
+    margin: 10% 0% 10% 0%;
+    vertical-align: top;
+    padding: 1% 0%;
+}
+
+.escolhaPlataforma:hover h2 {
+	font-size: 70%;
+    opacity: 0.2;
+}
+
+.escolhaPlataforma h2 {
+	font-size: 120%;
+	font-weight: bold;
+}
+
+.plataf-imagens1 {
+    max-width: 90%;
+}
+
+.plataf-imagens2 {
+  max-width: 70%;
+}
+
+.plataf-imagens3 {
+  max-width: 80%;
+}
+
+@media screen and (min-width: 481px) {
+.plataf-imagens1:hover {
+    transform: scale(1.1);
+}
+
+.plataf-imagens2:hover {
+  transform: scale(1.1);
+}
+
+.plataf-imagens3:hover {
+  transform: scale(1.1);}
+}
+
+.bannerSecundario {
+    margin: 2%;    
+}
+
+.bannerDown {
+   border-radius: 1%;
+   width: 100%;
+} 
+
+.galeriaProdutos {
+    padding: 30px;
+    justify-content: center;
+    justify-items: center;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.produtos {
+    display: inline-grid;
+    text-align: center;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: stretch;
+    vertical-align: top;
+    margin: 2% 2% 2.2% 0%;
+    padding: 1% 0%;
+}  
+  
+.produtos:hover h2 {
+	font-size: 70%;
+    opacity: 0.2;
+}
+
+.produtos h2 {
+	font-size: 120%;
+	font-weight: bold;
+}
+
+.precoAvista {
+	font-size: 80%;
+}
+
+.precoParcelado {
+	font-size: 100%;
+	font-weight: bold;
+	margin-top: 2%;
+}
+
+.imagemTamanho {
+    width: 50%;
+}
+        
+/*NEWSLETTER*/
+.rodapePrincipalEmail {
+	margin-top: 2%;
+	background: var(--azulEmail);
+    max-width: 100%;
+	padding: 2% 20%;
+    color: var(--branco);   
+}
+
+.rodapePrincipal-contatoForm label[for=email-contato] {
+	font-weight: bold;
+	font-size: 2px;
+	color: var(--branco);
+	margin-bottom: 1%;
+	display: flex;
+}
+
+
+.rodapePrincipal-contatoForm-emailInput {
+  border-radius: 10px 0px 0px 10px;
+  padding: 5%;
+}
+
+.rodapePrincipal-contatoForm-submit {
+	    border-radius: 0px 10px 10px 0;
+	background-color: var(--vermelho1);
+	color: var(--branco);
+	cursor: pointer;	
+}
+
+.rodapePrincipal-contatoForm-emailInput {
+	outline: 0;
+	border: 1% solid var(--preto_max);
+	box-sizing: border-box;
+}
+
+.rodapePrincipalEmail  {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.rodapePrincipal-contatoForm-fieldset {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+
+
+
+                                              /* versão mobile*/
+    
+/*main*/
+@media screen and (max-width: 480px) {
+.plataf-imagens {
+ margin: 10%;
+}
+
+/*para a versão sem bootstrap no banner principal*/
+.bannerPrincipal {
+display: none;
+}
+
+/*para a versão com bootstrap ou no angular */
+#myCarousel {
+  display: none;
+}
+
+.bannerDestaque {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.destaquePlataforma {
+    padding: 30px;
+    justify-content: center;
+    justify-items: center;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+    
+.galeriaProdutos {
+ padding: 30px;
+ justify-content: center;
+ justify-items: center;
+ display: grid;
+ grid-gap: 30px;
+ grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+
+
+}
+
+
+
+
+  
+/*alternar os carroséis das versoes desktop/tablet e mobile*/
+
+@media screen and (min-width: 481px) {  
+ #carouselExampleDark {
+display: none;}
+}
+
+
+@media screen and (max-width: 481px) { 
+    .escolhaPlataforma {
+display: none;}
+}

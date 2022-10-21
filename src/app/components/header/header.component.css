@@ -1,0 +1,438 @@
+/*versão desktop & tablet*/
+/*Header*/
+.cabecalhos {
+    display: flex;
+    flex-direction: column;
+   }
+   
+   .cabecalhoPrincipal {
+    background-color: var(--preto_max);
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: 173px;
+   }
+   
+   .cabecalho {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    align-items: center;
+   }
+   
+   .logo {
+    width: 170px;
+    margin-top: 4%;
+   }
+   
+   .areaCliente {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 5%;
+   }
+   
+   .comprasLogin {
+    display: flex;
+    align-items: center;
+   }
+   
+   .loginTamanho {
+    width: 100px;
+   }
+   
+   .sacolaDeCompras {
+    width: 51px;
+   }
+   
+   .botaoLogin {
+    background-color: var(--vermelho1);
+    border-color: var(--vermelho1);
+    width:0px;
+   }
+   
+   .menuPlataformas {
+       display: flex;
+       background-color: var(--vermelho1);
+       justify-content: space-around;
+       align-items: center;
+       padding: 0% 10%;
+       flex-direction: row;
+       flex-wrap: nowrap;
+       color: var(--branco);
+   }
+   
+   .menuPlataformas li:hover {
+       transform: scale(1.2);
+   }
+   
+   .logoxbox {
+       width: 25px;
+   }
+   
+   .logonintendo {
+       width: 30px;
+   }
+   
+   .logoplaystation {
+       width: 30px;
+   }
+   
+   .logotipoplacadevideo {
+       width: 45px;
+   }
+   
+   .lgotipocategorias {
+       width: 30px;
+   }
+  
+   /* VERSÃO MOBILE */
+   /*header*/
+  @media screen and (max-width: 480px) {
+    .cabecalhos {
+        display: flex;
+        align-items: stretch;
+        flex-direction: column;
+        flex-wrap: wrap
+      }
+    
+    .cabecalhoPrincipal {
+        background-color: var(--preto_max);
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        align-content: space-around;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        height: 80px;
+    }
+    
+    .logo {
+        width: 100px;
+        margin-top: 12%;
+    }
+    
+    .botaoMenuLateral {
+        margin-left: 2%;
+        width: 25%;
+    }
+        
+     
+    .cabecalho {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        width: 50%;
+    }
+    
+    .botaoPesquisa {
+     display: none;
+    }
+        
+    .areaCliente {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-right: 2%;
+        justify-content: flex-end;
+        width: 25%;
+    }
+    
+    .comprasLogin {
+        display: flex;
+    }
+    
+    .sacolaDeCompras {
+     width: 25px;
+    }
+    
+    .loginTamanho {
+        width: 56px;
+    }
+        
+    .menu {
+     display: none;
+    }
+    }
+  
+  
+            /* Login com redes sociais ou manual*/
+  
+  /* O Modal (background) */  
+  .modal {
+  display: none; /* Oculto por padrão */
+  position: fixed; /*Fique no lugar */
+  z-index: 1; /* Sente-se em cima */
+  left: 0;
+  top: 0;
+  width: 100%; /* Largura completa */
+  height: 100%; /* Altura toda*/
+  overflow: auto; /* Ative a rolagem, se necessário */
+  background-color: var(--preto_max); /* Cor alternativa */
+  background-color:  rgba(0,0,0,0.4); /* Preto com opacidade*/
+  padding-top: 60px;	
+  }
+  
+  @media screen and (min-width: 480px) {
+    .textoEscolheLogin2 {
+      display: none;
+      padding: 2%;}  
+  }
+  
+  @media screen and (max-width: 480px) {
+  .textoEscolheLogin1 {
+    display: none;
+    padding: 2%;}  
+  }
+  
+  /* Botão de fechar o container */
+  .close {
+  /* Posicione-o no canto superior direito fora do modal */  
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: var(--branco);
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  /* Botão Fechar ao passar o mouse */
+  .close:hover,
+  .close:focus {
+  color: var(--vermelho1);
+  cursor: pointer;
+  }
+  
+  /* Adicionar animação de zoom */
+  .animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(1)}
+  }
+  
+  @keyframes animatezoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+  } 	
+  
+  * {box-sizing: border-box}
+  
+  /* estilize o container*/
+  .contem {
+  margin: 0 20px 0px 20px;
+  position: relative;
+  border-radius: 5px 5px  0px 0px;
+  background-color: var(--backgoundContainer);
+  padding: 20px 0px 20px 0px;
+  text-align: center;
+  }
+  
+  @media screen and (min-width: 1064px) {
+  .contem {
+  border-radius: 5px 5px  0px 0px;
+  background-color: var(--backgoundContainer);
+  padding: 1%;
+  margin-right: 25%;
+  margin-left: 25%;
+  text-align: center;}
+  }
+  
+  /* entradas de estilo e botões de link */
+  input,
+  .btn {
+  width: 100%;
+  padding: 12px;
+  border-color: var(--azure);
+  margin: 5px 0;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none; /* remove underline from anchors */
+  border-radius: 5px;
+  color: var(--branco)
+  }
+  
+  input:hover,
+  .btn:hover {
+  opacity: 1;
+  }
+  
+  /* adicionar propriedades dos botoes fb, twitter e google */
+  .fb {
+  background-color: var(--azulFacebook);
+  color: var(--branco);
+  }
+  
+  .twitter {
+  background-color: var(--azulTwitter);
+  color: var(--branco);
+  }
+  
+  .google {
+  background-color: var(--vermelhoGoogle);
+  color: var(--branco);
+  }
+  
+  /* estilize o botão enviar */
+  input[type=submit] {
+  background-color: var(--botaoEnviar);
+  color:var(--branco);
+  cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+  background-color: var(--botaoEnviarHover);
+  }
+  
+  /* Layout de duas colunas*/
+  .coluna {
+  float: left;
+  width: 50%;
+  margin: auto;
+  padding: 0 50px;
+  margin-top: 6px;
+  }
+  
+  /* Limpar floats após as colunas */
+  .rolar:after {
+  content: "";
+  display: table;
+  clear: both;
+  }
+  
+  /* ocultar algum texto em telas médias e grandes */
+  .hide-md-lg {
+  display: none;
+  }
+  
+  /* botão container inferior (esqueceu senha- criar conta */
+  @media screen and (min-width: 481px) {
+  .bottom-contem {
+  text-align: center;
+  background-color: var(--azulEmail);
+  border-radius: 0px 0px 4px 4px;
+  color: var(--branco);
+  margin: 0 20px 0px 20px;}
+  }
+  
+  
+  
+  @media screen and (min-width: 1064px) {
+  .bottom-contem {
+    text-align: center;
+    background-color: var(--azulEmail);
+    border-radius: 0px 0px 4px 4px;
+    margin-left: 25%;
+    color: var(--branco);
+    margin-right: 25%}
+    
+  }  
+  
+  /* Layout responsivo - quando a tela tiver menos de 480px de largura, faça as duas colunas empilharem uma sobre a outra em vez de uma ao lado da outra */
+  @media screen and (max-width: 480px) {
+  .contem {
+    border-radius: 5px 5px  0px 0px;
+    background-color: var(--backgoundContainer);
+    padding: 1%;
+    margin: 5% 1% 0% 1%;
+    text-align: center;
+  }
+  
+  .coluna {
+    width: 100%;
+    margin-top: 0;
+  }
+  
+  /* mostrar o texto oculto em telas pequenas */
+  .hide-md-lg {
+    display: block;
+    text-align: center;
+    padding: 2%;
+  }
+  .bottom-contem {
+    text-align: center;
+    background-color: var(--azulEmail);
+    border-radius: 0px 0px 4px 4px;
+    margin: 0% 1% 0% 1%;
+    color: var(--branco);
+  }
+  }
+  
+  /* configuração menu lateral - mobile */
+  @media screen and (min-width: 481px) {
+  .botaoMenuLateral {
+   display: none;}
+  
+  }
+  
+  /* O menu de navegação lateral */
+  .menuLateral {
+    display: flex;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--preto_max);
+    /*background-image: linear-gradient(var(--preto_max), var(--cinzamMenuLateral));*/
+    overflow-x: hidden;
+    padding-top: 10px;
+    transition: 0.3s;
+   /* border-radius: 0% 0% 5% 0%; */
+    flex-direction: column;
+  }
+  
+  .menuLateralLogo {
+  width: 164px;
+  align-self: center;
+  }
+  
+  /*   Os links do menu de navegação */
+  .menuLateral a {
+    padding: 20px 0px 20px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--branco);
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .iconeMenuLateral {
+  width: 10%;
+  }
+  
+  /* Ao passar o mouse sobre os links de navegação, altere sua cor */
+  .sidenav a:hover {
+  color: var(--corTextoVertLine);
+  }
+  
+  /* Posicione e estilize o botão Fechar (canto superior direito) */
+  .menuLateral .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  }
+  
+  /* Conteúdo da página de estilo - use isso se quiser empurrar o conteúdo da página para a direita ao abrir a navegação lateral */
+  #main {
+  transition: margin-left .5s;
+  padding: 20px;
+  }
+  
+  /* Em telas menores, onde a altura é menor que 450px, altere o estilo do sidenav (menos preenchimento e tamanho de fonte menor) */
+  @media screen and (max-height: 450px) {
+  .menuLateral {padding-top: 15px;}
+  .menuLateral a {font-size: 18px;}
+  } 

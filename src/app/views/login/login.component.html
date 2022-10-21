@@ -1,0 +1,25 @@
+<main>
+	<form  class="resetarSenha"> <!-- (ngSubmit)="receberDados()"-->
+		<div class="dadosLogin">
+			<label for="nomecompleto">Nome completo</label>
+			<input type="text" id="nomecompleto" class="input-padrao"  style="color:black ;" required placeholder="Digite seu nome">
+
+			<label for="email">Email</label>
+			<input type="email" id="email" class="input-padrao"  style="color:black ;"  required placeholder="Digite seu e-mail"><!-- [(ngModel)]="userModel.email"-->
+
+			<label for="telefone">Telefone</label>
+			<input type="tel" id="telefone" class="input-padrao"  style="color:black ;"  required placeholder="(XX) XXXXX-XXXX">
+		</div>
+
+		<div class="manContatos">
+			<fieldset>
+				<legend>Como deseja reiniciar sua senha ?</legend>
+				<div class="contatoReset">
+					<label for="radio-email">E-mail<input type="radio" name="contato" value ="email" id="radio-email"></label>
+					<label for="radio-sms">SMS<input type="radio" name="contato" value = "SMS" id="radio-sms"></label>
+				</div>
+			</fieldset>
+		</div>
+			<input type="submit" value="Enviar" class="enviar">
+	  </form>
+	</main>

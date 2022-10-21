@@ -1,0 +1,39 @@
+/******* REINICIALIZAÇÃO DE Elad Shechter  ******/ 
+/*** tamanho da caixa border-box para todos os elementos ***/
+*,
+*::before,
+*::after{box-sizing:border-box;}a{text-decoration:none; color:inherit; cursor:pointer;}
+button{background-color:transparent; color:inherit; border-width:0; padding:0; cursor:pointer;}
+figure{margin:0;}
+input::-moz-focus-inner {border:0; padding:0; margin:0;}
+ul, ol, dd{margin:0; padding:0; list-style:none;}
+h1, h2, h3, h4, h5, h6{margin:0; font-size:inherit; font-weight:inherit;}
+p{margin:0;}
+cite {font-style:normal;}
+fieldset{border-width:0; padding:0; margin:0;}
+
+
+body {
+	font-family: 'Montserrat', sans-serif;
+  font-size: large;
+}
+
+:root {
+  --preto_max:#080000;
+  --vermelho1:#f80000;
+  --vermelho2:#b30000;
+  --branco:#FFFFFF;   
+  --azulEmail: #3104B4;
+  --azulFacebook: #3B5998;
+  --azulTwitter: #55ACEE;
+  --vermelhoGoogle:#dd4b39;
+  --botaoEnviar: #FF9900;
+  --botaoEnviarHover: #262563;
+  --corTextoVertLine: #f1f1f1;
+  --bordaVertiLine: #ccc;
+  --backgoundContainer:#f2f2f2; 
+  --cinzamMenuLateral: #878282; 
+  --azure: #f0ffff;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

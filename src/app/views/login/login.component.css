@@ -1,0 +1,135 @@
+/* config página login esqueceu a senha */
+
+/*.form {
+	margin:  40px 0;
+	margin-left: 1%;
+}
+
+form label, form legend {
+  display: flex;
+  font-size: 15px;
+  margin: 10px;
+  justify-content: left;
+  align-items: center;
+}
+*/
+.input-padrao {
+	display:  block;
+	margin:  0 0 20px;
+	padding:  10px 25px;
+	width:  30%;
+  border-radius: 15px;
+}
+
+.checkbox {
+	margin:  20px 0;
+}
+
+.enviar {
+	width:  15%;
+	padding:  15px 0;
+	background:  var(--botaoEnviar);
+	color:  var(--branco);
+	font-weight:  bold;
+	font-size:  18px;
+	border:  none;
+	border-radius:  15px;
+	transition: 1s all;
+	cursor:  pointer;
+}
+
+.enviar:hover {
+    background: var(--azulEmail);
+    color: var(--branco);
+    transform: scale(1.1);
+}
+
+.dadosLogin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+
+.resetarSenha {
+  color: var(--branco);
+  display: flex;
+  flex-direction: column;
+  margin: 1%;
+  background-image: linear-gradient(var(--preto_max), var(--cinzamMenuLateral));
+  padding: 1%;
+  align-items: center;
+  box-shadow: 0px 0px 0px 25px var(--cinzamMenuLateral);
+}
+
+.dadosLogin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.manContatos {
+display: flex;
+align-content: center;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.input-padrao {
+  display: block;
+  margin: 0 0 20px;
+  padding: 10px 25px;
+  width: 50%;
+  border-radius: 15px;
+}
+
+.contatoReset {
+display: flex;
+justify-content: space-around;
+flex-direction: row-reverse;
+}
+
+.enviar {
+  width: 20%;
+  padding: 15px 0;
+  background: var(--botaoEnviar);
+  color: var(--branco);
+  font-weight: bold;
+  font-size: 18px;
+  border: none;
+  border-radius: 15px;
+  transition: 1s all;
+  cursor: pointer;
+}
+
+input,
+.btn {
+width: 100%;
+padding: 12px;
+border: none;
+border-radius: 5px;
+margin: 5px 0;
+opacity: 0.85;
+display: inline-block;
+font-size: 17px;
+line-height: 20px;
+text-decoration: none; /* remover sublinhado das âncoras */
+text-align: center;
+}
+
+.contatoReset {
+ display:flex; 
+ flex-direction: row;
+ justify-content: center;
+}
+
+       /* versao mobile  */
+
+@media screen and (max-width: 481px) {
+.input-padrao {
+  width: 80%;}
+
+.enviar {
+    width: 50%;}
+}
