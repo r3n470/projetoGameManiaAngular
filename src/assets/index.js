@@ -28,17 +28,6 @@ function cadastrarNewsletter() {
   console.log(email)
   }
 
-//script login midia social 
-
-var modal = document.getElementById('id01');
-
-// Quando o usuário clicar em qualquer lugar fora do modal, feche-o
-
-window.onclick = function (event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-} 
 
 
 // jQuery usado no rodapé para ocultar conteúdo dos itens Formas de Pagamento e  Redes Sociais
@@ -89,6 +78,17 @@ $(window).resize(function(){
 }).resize()
 });
 
+/*script login midia social  (NÃO ATIVAR NO ANGULAR)
+
+var modal = document.getElementById('id01');
+
+// Quando o usuário clicar em qualquer lugar fora do modal, feche-o
+
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+} 
     
  
 
@@ -109,3 +109,30 @@ x[myIndex-1].style.display = "block";
 setTimeout(carousel, 3000); // intervalo em milisegundos para alteração da imagem do banner Principal
 }
 */
+
+
+
+/* outra maneira de fazer login com redes sociais (-menos angular)
+const handleClickOutside = (event) => {
+  let overlay = document.getElementById("overlay");
+  let modal = document.getElementById("modal");
+
+  if (!modal.contains(event.target)) {
+    modal.style.display = 'none';
+    overlay.style.display = 'none';
+
+    document.removeEventListener('click', handleClickOutside, false);
+  }
+}
+
+const openModal = () => {
+  let overlay = document.getElementById("overlay")
+  let modal = document.getElementById("modal");
+
+  overlay.style.display = 'flex'
+  modal.style.display = 'flex'
+
+  setTimeout(() => {
+    document.addEventListener('click', handleClickOutside, false)
+  }, 200);
+} */

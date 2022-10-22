@@ -37,6 +37,7 @@
    .comprasLogin {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
    }
    
    .loginTamanho {
@@ -54,15 +55,17 @@
    }
    
    .menuPlataformas {
-       display: flex;
-       background-color: var(--vermelho1);
-       justify-content: space-around;
-       align-items: center;
-       padding: 0% 10%;
-       flex-direction: row;
-       flex-wrap: nowrap;
-       color: var(--branco);
-   }
+    display: flex;
+    background-color: var(--vermelho1);
+    justify-content: space-around;
+    align-items: center;
+    padding: 0% 8%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    color: var(--branco);
+    margin: 0px 0px 0px 0px;
+    background-image: linear-gradient(#fa0000, #f50909);
+}
    
    .menuPlataformas li:hover {
        transform: scale(1.2);
@@ -157,95 +160,28 @@
     .menu {
      display: none;
     }
-    }
-  
+    } 
   
             /* Login com redes sociais ou manual*/
-  
-  /* O Modal (background) */  
-  .modal {
-  display: none; /* Oculto por padrão */
-  position: fixed; /*Fique no lugar */
-  z-index: 1; /* Sente-se em cima */
-  left: 0;
-  top: 0;
-  width: 100%; /* Largura completa */
-  height: 100%; /* Altura toda*/
-  overflow: auto; /* Ative a rolagem, se necessário */
-  background-color: var(--preto_max); /* Cor alternativa */
-  background-color:  rgba(0,0,0,0.4); /* Preto com opacidade*/
-  padding-top: 60px;	
-  }
-  
-  @media screen and (min-width: 480px) {
-    .textoEscolheLogin2 {
-      display: none;
-      padding: 2%;}  
-  }
-  
-  @media screen and (max-width: 480px) {
-  .textoEscolheLogin1 {
-    display: none;
-    padding: 2%;}  
-  }
-  
-  /* Botão de fechar o container */
-  .close {
-  /* Posicione-o no canto superior direito fora do modal */  
-    position: absolute;
-    right: 25px;
-    top: 0;
-    color: var(--branco);
-    font-size: 35px;
-    font-weight: bold;
-  }
-  
-  /* Botão Fechar ao passar o mouse */
-  .close:hover,
-  .close:focus {
-  color: var(--vermelho1);
-  cursor: pointer;
-  }
-  
-  /* Adicionar animação de zoom */
-  .animate {
-  -webkit-animation: animatezoom 0.6s;
-  animation: animatezoom 0.6s
-  }
-  
-  @-webkit-keyframes animatezoom {
-  from {-webkit-transform: scale(0)}
-  to {-webkit-transform: scale(1)}
-  }
-  
-  @keyframes animatezoom {
-  from {transform: scale(0)}
-  to {transform: scale(1)}
-  } 	
-  
-  * {box-sizing: border-box}
-  
-  /* estilize o container*/
+    /* estilize o container*/
   .contem {
-  margin: 0 20px 0px 20px;
+  margin: 0 20px 0px 0px;
   position: relative;
-  border-radius: 5px 5px  0px 0px;
+  border-radius: 15px 15px  15px 15px;
   background-color: var(--backgoundContainer);
-  padding: 20px 0px 20px 0px;
+  padding: 20px 0px 0px 0px;
   text-align: center;
   }
+    /* botão container inferior (esqueceu senha- criar conta */
+ 
+.bottom-contem {
+    text-align: center;
+    background-color: var(--azulEmail);
+    border-radius: 0px 0px 15px 15px;
+    color: var(--azulEmail);
+}
   
-  @media screen and (min-width: 1064px) {
-  .contem {
-  border-radius: 5px 5px  0px 0px;
-  background-color: var(--backgoundContainer);
-  padding: 1%;
-  margin-right: 25%;
-  margin-left: 25%;
-  text-align: center;}
-  }
-  
-  /* entradas de estilo e botões de link */
+    /* entradas de estilo e botões de link */
   input,
   .btn {
   width: 100%;
@@ -254,7 +190,7 @@
   margin: 5px 0;
   opacity: 0.85;
   display: inline-block;
-  font-size: 17px;
+  font-size: 10px;
   line-height: 20px;
   text-decoration: none; /* remove underline from anchors */
   border-radius: 5px;
@@ -314,59 +250,33 @@
   display: none;
   }
   
-  /* botão container inferior (esqueceu senha- criar conta */
-  @media screen and (min-width: 481px) {
-  .bottom-contem {
-  text-align: center;
-  background-color: var(--azulEmail);
-  border-radius: 0px 0px 4px 4px;
-  color: var(--branco);
-  margin: 0 20px 0px 20px;}
+    @media screen and (min-width: 480px) {
+    .textoEscolheLogin2 {
+      display: none;
+      padding: 2%;}  
   }
+ 
+  /*** VERSÃO MOBILE ****/
+  
+   @media screen and (max-width: 480px) {
+  .textoEscolheLogin1 {
+    display: none;
+    padding: 2%;}  
   
   
-  
-  @media screen and (min-width: 1064px) {
-  .bottom-contem {
-    text-align: center;
-    background-color: var(--azulEmail);
-    border-radius: 0px 0px 4px 4px;
-    margin-left: 25%;
-    color: var(--branco);
-    margin-right: 25%}
-    
-  }  
-  
-  /* Layout responsivo - quando a tela tiver menos de 480px de largura, faça as duas colunas empilharem uma sobre a outra em vez de uma ao lado da outra */
-  @media screen and (max-width: 480px) {
-  .contem {
-    border-radius: 5px 5px  0px 0px;
-    background-color: var(--backgoundContainer);
-    padding: 1%;
-    margin: 5% 1% 0% 1%;
-    text-align: center;
-  }
-  
-  .coluna {
+  /* quando a tela tiver menos de 480px de largura, faça as duas colunas empilharem uma sobre a outra em vez de uma ao lado da outra */
+     
+ .coluna {
     width: 100%;
-    margin-top: 0;
-  }
+    margin-top: 0;}
   
   /* mostrar o texto oculto em telas pequenas */
   .hide-md-lg {
     display: block;
     text-align: center;
-    padding: 2%;
-  }
-  .bottom-contem {
-    text-align: center;
-    background-color: var(--azulEmail);
-    border-radius: 0px 0px 4px 4px;
-    margin: 0% 1% 0% 1%;
-    color: var(--branco);
-  }
-  }
-  
+    padding: 2%;}
+ }
+
   /* configuração menu lateral - mobile */
   @media screen and (min-width: 481px) {
   .botaoMenuLateral {

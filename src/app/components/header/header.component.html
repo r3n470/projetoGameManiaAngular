@@ -1,81 +1,109 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
 <header class="cabecalhos">
-    <section class="cabecalhoPrincipal">
-      <div id="menuLateralMobile" class="menuLateral">
-       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <img src="assets/img/icones/logoprincipal.svg" alt="Logotipo da Loja" class="menuLateralLogo">
-        <a href="#"><img src="assets/img/icones/logotipo-do-xbox 2.svg" alt="Botão de Link Xbox" class="iconeMenuLateral">Xbox</a>
-        <a href="#"><img src="assets/img/icones/logoplaystation.png" alt="Botão de link playstation" class="iconeMenuLateral">Playstation</a>
-        <a href="#"><img src="assets/img/icones/logonintendo.png" alt="botão de Link Nintendo" class="iconeMenuLateral">Nintendo</a>
-        <a href="#"><img src="assets/img/icones/logotipoplacadevideo.svg" alt="Botão de link Placa de vídeo" class="iconeMenuLateral"> Informática</a>
-        <a href="#"><img src="assets/img/icones/lgotipocategorias.svg" alt="botão de link categorias" class="iconeMenuLateral">Categoria</a></div>
-        
-         <!-- Use qualquer elemento para abrir a navegação lateral-->
-        <a routerLink="/" class="botaoMenuLateral" onclick="openNav()"><img src="assets/img/icones/menuLateral.svg" alt="Botão de menu"></a>
-        <div class="cabecalho">
-        <a routerLink="/"><img src="assets/img/icones/logoprincipal.svg" class="logo"></a>
-        </div>
+  <section class="cabecalhoPrincipal">
+    <div id="menuLateralMobile" class="menuLateral">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <img src="assets/img/icones/logoprincipal.svg" alt="Logotipo da Loja" class="menuLateralLogo">
+      <a href="#"><img src="assets/img/icones/logotipo-do-xbox 2.svg" alt="Botão de Link Xbox"
+          class="iconeMenuLateral">Xbox</a>
+      <a href="#"><img src="assets/img/icones/logoplaystation.png" alt="Botão de link playstation"
+          class="iconeMenuLateral">Playstation</a>
+      <a href="#"><img src="assets/img/icones/logonintendo.png" alt="botão de Link Nintendo"
+          class="iconeMenuLateral">Nintendo</a>
+      <a href="#"><img src="assets/img/icones/logotipoplacadevideo.svg" alt="Botão de link Placa de vídeo"
+          class="iconeMenuLateral"> Informática</a>
+      <a href="#"><img src="assets/img/icones/lgotipocategorias.svg" alt="botão de link categorias"
+          class="iconeMenuLateral">Categoria</a>
+    </div>
 
-      <div class="areaCliente">
-        <div class="comprasLogin">
-          <a href="#"><img src="assets/img/icones/sacola4.svg" alt="icone sacola" class="sacolaDeCompras"></a>
-          <a onclick="document.getElementById('id01').style.display='block'" style=><img src="assets/img/icones/login (2).svg" alt="Botão login" class="loginTamanho"></a>
-        </div>
-      </div>
+    <!-- Use qualquer elemento para abrir a navegação lateral-->
+    <a routerLink="/" class="botaoMenuLateral" onclick="openNav()"><img src="assets/img/icones/menuLateral.svg"
+        alt="Botão de menu"></a>
+    <div class="cabecalho">
+      <a routerLink="/"><img src="assets/img/icones/logoprincipal.svg" class="logo"></a>
+    </div>
+    <div class="areaCliente">
+      <div class="comprasLogin container">
+        <a href="#"><img src="assets/img/icones/sacola4.svg" alt="icone sacola" class="sacolaDeCompras"></a>
+        <!--<button onclick="openModal()">Open modal<img src="assets/img/icones/login (2).svg" alt="Botão login" class="loginTamanho"></button>-->
+        <button data-toggle="modal" data-target="#myModal"><img src="assets/img/icones/login (2).svg" alt="Botão login"
+            class="loginTamanho"></button>
 
-      <!-- O Modal -->
-      <!-- Botão para abrir o formulário de login modal -->
-      <div id="id01" class="modal">
-        <!--<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>-->
-        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-        <div class="contem">
-          <form  action="/action_page.php" (ngSubmit)="receberDados()">
-            <div class="rolar">
-              <h2 class="textoEscolheLogin1">Faça login com as redes sociais ou manualmente</h2>
-              <h2 class="textoEscolheLogin2">Faça login com as redes sociais</h2>
-              
-            
-            <div class="coluna">  
-              <a href="#" class="fb btn"><i class="fa fa-facebook fa-fw"></i> Entrar com o Facebook</a>
-              <a href="#" class="twitter btn"><i class="fa fa-twitter fa-fw"></i> Entrar com o Twitter</a>
-              <a href="#" class="google btn"><i class="fa fa-google fa-fw"></i> Entrar com o Google+</a>
-            </div>
+        <!--<div class="">-->
+        <!-- Acione o modal com um botão -->
+       
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+          <div class="modal-dialog">
 
-            <div class="coluna">
-                <div class="hide-md-lg">
-                  <p>ou faça manualmente:</p>
+            <!-- Conteúdo modal-->
+            <div class="contem modal-content">
+              <form action="/action_page.php" (ngSubmit)="receberDados()">
+                <div class="rolar">
+                  <h2 class="textoEscolheLogin1">Faça login com as redes sociais ou manualmente</h2>
+                  <h2 class="textoEscolheLogin2">Faça login com as redes sociais</h2>
+                  <div class="coluna">
+                    <a href="#" class="fb btn"><i class="fa fa-facebook fa-fw"></i> Entrar com o Facebook</a>
+                    <a href="#" class="twitter btn"><i class="fa fa-twitter fa-fw"></i> Entrar com o Twitter</a>
+                    <a href="#" class="google btn"><i class="fa fa-google fa-fw"></i> Entrar com o Google+</a>
+                  </div>
+                  <div class="coluna">
+                    <div class="hide-md-lg">
+                      <h2>ou manualmente:</h2>
+                    </div>
+                    <input type="email" name="email" id="email" style="color:black ;" placeholder="Digite seu e-mail"
+                      required [(ngModel)]="userModel.email">
+                    <input type="password" name="password" id="senha" style="color:black ;"
+                      placeholder="Digite sua senha" required [(ngModel)]="userModel.password">
+                    <input type="submit" value="Conecte-se">
+                  </div>
                 </div>
-                <input type="email" name="email" id="email" style="color:black ;" placeholder="Digite seu e-mail" required [(ngModel)]="userModel.email">
-                <input type="password" name="password" id="senha"  style="color:black ;" placeholder="Digite sua senha" required  [(ngModel)]="userModel.password">    
-                <input type="submit" value="Conecte-se">
+              </form>
+              <div class="bottom-contem">
+                <div class="rolar">
+                  <div class="coluna">
+                    <a href="#" class="btn">Criar conta</a>
+                  </div>
+                  <div class="coluna">
+                    <button data-toggle="modal" data-target="#myModal" routerLink="/login" class="btn">Esqueceu a
+                      senha?</button>
+                    <!--ROUTERLINK =para chamar A PÁGINA DE LOGIN NO ANGULAR, data-toggle="modal" data-target="#myModal" PARA ESCONDER O MODAL AO SER DIRECIONADO A PAGINA DE LOGIN-->
+                  </div>
+                </div>
               </div>
-            </div>
-          </form>
-        </div>
-
-        <div class="bottom-contem">
-          <div class="rolar">
-            <div class="coluna">
-              <a href="#" class="btn">Criar conta</a>
-            </div>
-            <div class="coluna">
-              <a routerLink="/login" class="btn">Esqueceu a senha?</a> <!-- para chamar o componente do angular -->
             </div>
           </div>
         </div>
+      </div>
     </div>
-    </section>
-
-    <section class="menu">
-      <nav class="menuP">
-        <ul class="menuPlataformas">
-          <li><a id="button" href="https://www.xbox.com/pt-BR" target="_blank" rel="noopener noreferrer">
-              <!-- TARGET E BLANK PARA ABRIR PÁGINA EM NOVA ABA--><img src="assets/img/icones/logotipo-do-xbox 2.svg"
-                alt="Botão de Link Xbox" class="logoxbox botaoMenu">Xbox</a>                   <!--class="name">Xbox PARA ADICIONAR O NOME NO-->
-          <li><a href="#"><img src="assets/img/icones/logoplaystation.png" alt="Botão de link playstation" class="logoplaystation">Playstation</a><li>
-          <li><a href="#"><img src="assets/img/icones/logonintendo.png" alt="botão de Link Nintendo" class="logonintendo">Nintendo</a><li>
-          <li><a href="#"><img src="assets/img/icones/logotipoplacadevideo.svg" alt="Botão de link Placa de vídeo" class="logotipoplacadevideo">Informática</a><li>
-          <li><a href="#"><img src="assets/img/icones/lgotipocategorias.svg" alt="botão de link categorias" class="lgotipocategorias">Categorias</a><li>
-        </ul>
-      </nav>
-    </section>
-  </header>
+  </section>
+  <section class="menu">
+    <nav class="menuP">
+      <ul class="menuPlataformas">
+        <li><button id="button" href="https://www.xbox.com/pt-BR" target="_blank" rel="noopener noreferrer">
+            <!-- TARGET E BLANK PARA ABRIR PÁGINA EM NOVA ABA--><img src="assets/img/icones/logotipo-do-xbox 2.svg"
+              alt="Botão de Link Xbox" class="logoxbox botaoMenu">Xbox
+          </button>
+          <!--class="name">Xbox PARA ADICIONAR O NOME NO-->
+        <li><button href="#"><img src="assets/img/icones/logoplaystation.png" alt="Botão de link playstation"
+              class="logoplaystation">Playstation</button>
+        <li>
+        <li><button href="#"><img src="assets/img/icones/logonintendo.png" alt="botão de Link Nintendo"
+              class="logonintendo">Nintendo</button>
+        <li>
+        <li><button href="#"><img src="assets/img/icones/logotipoplacadevideo.svg" alt="Botão de link Placa de vídeo"
+              class="logotipoplacadevideo">Informática</button>
+        <li>
+        <li><button href="#"><img src="assets/img/icones/lgotipocategorias.svg" alt="botão de link categorias"
+              class="lgotipocategorias">Categorias</button>
+        <li>
+      </ul>
+    </nav>
+  </section>
+</header>

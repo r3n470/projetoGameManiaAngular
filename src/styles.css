@@ -1,5 +1,6 @@
 /******* REINICIALIZAÇÃO DE Elad Shechter  ******/ 
 /*** tamanho da caixa border-box para todos os elementos ***/
+
 *,
 *::before,
 *::after{box-sizing:border-box;}a{text-decoration:none; color:inherit; cursor:pointer;}
@@ -13,9 +14,10 @@ cite {font-style:normal;}
 fieldset{border-width:0; padding:0; margin:0;}
 
 
+/*@import '~normalize.css';*/
+
 body {
-	font-family: 'Montserrat', sans-serif;
-  font-size: large;
+  font-family: 'Exo 2', sans-serif;
 }
 
 :root {

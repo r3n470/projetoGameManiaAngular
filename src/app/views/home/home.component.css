@@ -1,4 +1,10 @@
 /*Main*/
+
+.container-fluid {
+    width: 100%;
+    padding: 0px;
+}
+
 .bannerPromo {
     width: 100%;
 }
@@ -178,11 +184,7 @@
     justify-content: center;
 }
 
-
-
-
-
-                                              /* versão mobile*/
+/* versão mobile*/
     
 /*main*/
 @media screen and (max-width: 480px) {
@@ -222,16 +224,8 @@ display: none;
  justify-items: center;
  display: grid;
  grid-gap: 30px;
- grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+ grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));}
 }
-
-
-
-}
-
-
-
-
   
 /*alternar os carroséis das versoes desktop/tablet e mobile*/
 
@@ -239,7 +233,6 @@ display: none;
  #carouselExampleDark {
 display: none;}
 }
-
 
 @media screen and (max-width: 481px) { 
     .escolhaPlataforma {

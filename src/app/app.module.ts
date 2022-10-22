@@ -8,7 +8,8 @@ import { AppRoutingModule } from './app-routing/app-routing.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms'
+
 
 @NgModule({
   declarations: [
@@ -16,8 +17,8 @@ import { FormsModule } from '@angular/forms';
     HomeComponent,
     LoginComponent,
     FooterComponent,
-    HeaderComponent
-   ],
+    HeaderComponent,
+     ],
   imports: [
     BrowserModule,
     AppRoutingModule,
